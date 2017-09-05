@@ -1,43 +1,351 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
+﻿<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Hello World</title>
+</head>
+<body>
+
+    <div data-role="page" data-position="fixed" id="pageone">
+        <div data-role="header" style="font-weight:500" data-theme="b">
+            <a href="#" class="ui-btn ui-corner-all  ui-icon-home ui-btn-icon-left">GŁÓWNA</a>
+            <h1>BLUE EYE PROJECT</h1>
+        </div>
+
+
+
+        <div data-role="main" class="ui-content">
+
+            <a href="http://mysql1.phpmyadmin.prv.pl/index.php?token=0103a344d9e205011f3fed69edcbed68" style="background-color:orange; position:center;" data-transition="flow" class="ui-btn ui-shadow  ui-icon-info  ui-btn-icon-left ui-corner-all">BAZA DANYCH</a>
+        </div>
+
+        
+        <div data-role="main" class="ui-content">
+
+            <a href="#pagefour" style="background-color:orange" data-transition="flow" class="ui-btn ui-shadow ui-icon-grid  ui-btn-icon-left ui-corner-all">KALKULATOR</a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <a href="#pagefive" style="background-color:orange; position:center;" data-transition="flow" class="ui-btn ui-shadow   ui-icon-shop  ui-btn-icon-left ui-corner-all">TRANSAKCJE</a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <a href="#pagesix" style="background-color:orange; position:center;" data-transition="flow" class="ui-btn ui-shadow  ui-icon-user  ui-btn-icon-left ui-corner-all">KLIENCI</a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <a href="#myPopup" style="background-color:orange" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">INFO</a>
+
+
+
+            <div data-role="popup" id="myPopup" data-theme="b" class="ui-content">
+                <div style="font-size:15px;"><h3>Instrukcja aplikacji</h3></div>
+                <p>Aplikacja będzie używana do obsługi mobilnej naszej firmy. <span style="font-size:25px;"></span>Menu glówne składa się z czterech przycisków:<strong>Baza danych</strong>-jest to odnosnik do bazy danych utworzonej na serwerze internetowym.
+                    <strong>Kalkulator</strong> Specjalny kalkulator dla naszej firmy, który pozwoli oblicz napięcia etc.
+                <strong>Transkacje oraz Klienci</strong>Dane na temat ukończonych transakcji oraz o naszych klientach.
+                <strong>Wersja aplikacji:1.0</strong></p>
+
+                <div data-role="footer" data-theme="b">
+                    <h1>@2017 </h1>
+                </div>
+
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1>@2017</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="pagetwo">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#pageone" data-transition="slidefade" class="ui-btn ui-corner-all  ui-icon-home ui-btn-icon-left">Home</a>
+            <h1>Baza Danych</h1>
+        </div>
+
+        
+
+            <div data-role="main" class="ui-content">
+
+                <a href="http://mysql1.phpmyadmin.prv.pl/index.php?token=0103a344d9e205011f3fed69edcbed68" style="background-color:orange" data-transition="flow" class="ui-btn ui-shadow  ui-icon-plus  ui-btn-icon-left ui-corner-all">DODAJ TRANSAKCJE</a>
+            
+            </div>
+        
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1>@2017</h1>
+        </div>
+    </div>
+
+
+    <div data-role="page" id="pagefour">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#pageone" data-transition="slidefade" class="ui-btn ui-corner-all  ui-icon-home ui-btn-icon-left">Home</a>
+            <h1>KALKULATOR</h1>
+        </div>
+        <div>
+
+            <form id="odb_1faz" action="">
+
+                <div>
+                    Podaj moc znamionową (W): <input type="number" name="moc_znamionowa"><br />
+                    Podaj napięcie znamionowe (V): <input type="number" name="napiecie" value="230"><br />
+                    <button onclick=" return odb_1faz()" style="background-color:orange">Oblicz</button>
+
+
+                </div>
+            </form>
+            <script>
+                // Przekroj dla odbiornika 1 fazowego
+                function odb_1faz() {
+                    //przypisanie obiektu moc_znamionowa do zmiennej
+                    var pole_moc = document.forms['odb_1faz'].moc_znamionowa;
+                    //odczytanie mocy
+                    var moc_znamionowa = pole_moc.value;
+
+                    //przypisanie obiektu napiecie do zmiennej
+                    var pole_napiecie = document.forms['odb_1faz'].napiecie;
+                    //odczytanie napiecia
+                    var napiecie = pole_napiecie.value;
+                    // obliczanie pradu obciazenia
+                    var prad;
+                    prad = moc_znamionowa / napiecie;
+                    //alert(prad);
+                    var prad_pop = prad.toFixed(2);
+                    if (moc_znamionowa > 3680) {
+                        alert("Prąd powyżej 16A, potrzebne zasilanie 3-fazowe");
+                    } else if (prad_pop > 9.5) {
+                        alert(prad_pop + "A. Zastosuj przewod 2,5mm i zab. 16A.");
+                    } else if (prad_pop < 9.5) {
+                        alert(prad_pop + "A. Zastosuj przewod 1,5mm i zab 10A.");
+                    }
+                    return false;
+                }
+            </script>
+            Prąd znamionowy odbiornika rezystancyjnego 3 fazowego
+            <form id="odb_3faz" action="">
+                <div>
+                    Podaj moc znamionową (W): <input type="number" name="moc_znamionowa"><br />
+                    Podaj napięcie międzyprzewodowe (V): <input type="number" name="napiecie3f" value="400"><br />
+                    <button onclick=" return odb_3faz()" style="background-color:orange">Oblicz</button>
+                </div>
+            </form>
+            <script>
+                // Przekroj dla odbiornika 1 fazowego
+                function odb_3faz() {
+                    //przypisanie obiektu moc_znamionowa do zmiennej
+                    var pole_moc = document.forms['odb_3faz'].moc_znamionowa;
+                    //odczytanie mocy
+                    var moc_znamionowa = pole_moc.value;
+
+                    //przypisanie obiektu napiecie do zmiennej
+                    var pole_napiecie = document.forms['odb_3faz'].napiecie3f;
+                    //odczytanie napiecia
+                    var napiecie3f = pole_napiecie.value;
+                    // obliczanie pradu obciazenia
+                    var prad;
+                    prad = moc_znamionowa / (Math.sqrt(3) * napiecie3f);
+                    var prad_pop = prad.toFixed(2);
+                    if (prad_pop < 13) {
+                        alert(prad_pop + "A. Przewod 1,5mm i zab. 13A.");
+                    } else if (prad_pop < 16) {
+                        alert(prad_pop + "A. Przewod 2,5mm i zab. 16A.");
+                    } else if (prad_pop < 25) {
+                        alert(prad_pop + "A. Przewod 4mm i zab. 25A.");
+                    } else if (prad_pop < 32) {
+                        alert(prad_pop + "A. Przewod 6mm i zab. 32A.");
+                    } else if (prad_pop < 40) {
+                        alert(prad_pop + "A. Przewod 10mm i zab 40A.");
+                    } else if (prad_pop < 50) {
+                        alert(prad_pop + "A. Przewod 16mm i zab. 50A.");
+                    } else if (prad_pop < 63) {
+                        alert(prad_pop + "A. Przewod 25mm i zab. 63A.");
+                    } else if (prad_pop < 80) {
+                        alert(prad_pop + "A. Przewod 35mm i zab. 80A.");
+                    } else {
+                        alert("Wynik: " + prad_pop + "A. Mam wiedze tylko do 80 A.");
+                    }
+                    return false;
+                }
+            </script>
+             Prąd znamionowy silnika 1 fazowego
+            <form id="sil_1faz" action="">
+                <div>
+                    Podaj moc znamionową (W): <input type="number" name="moc_znamionowa"><br />
+                    Podaj napięcie znamionowe (V): <input type="number" name="napiecie" value="230"><br />
+                    Podaj sprawność znamionową silnika: <input type="number" name="sprawnosc" placeholder="0 - 1"> <br />
+                    Podaj współczynnik mocy znamionowej: <input type="number" name="wspolczynnik" placeholder="0.75 - 0.9"><br />
+                    <button onclick=" return sil_1faz()" style="background-color:orange">Oblicz</button>
+                </div>
+            </form>
+            <script>
+                // Przekroj dla odbiornika 1 fazowego
+                function sil_1faz() {
+                    //przypisanie obiektu moc_znamionowa do zmiennej
+                    var pole_moc = document.forms['sil_1faz'].moc_znamionowa;
+                    //odczytanie mocy
+                    var moc_znamionowa = pole_moc.value;
+
+                    //przypisanie obiektu napiecie do zmiennej
+                    var pole_napiecie = document.forms['sil_1faz'].napiecie;
+                    //odczytanie napiecia
+                    var napiecie = pole_napiecie.value;
+
+                    // przypisanie obiektu sprawnosc do zmiennej
+                    var pole_sprawnosc = document.forms['sil_1faz'].sprawnosc;
+                    //odczytanie sprawnosci
+                    var sprawnosc = pole_sprawnosc.value;
+
+                    // przypisanie obiektu wspolczynnik do zmiennej
+                    var pole_wspolczynnik = document.forms['sil_1faz'].wspolczynnik;
+                    // odczyt sprawnosci
+                    var wspolczynnik = pole_wspolczynnik.value;
+
+
+                    // obliczanie pradu obciazenia
+                    var prad;
+                    prad = moc_znamionowa / (napiecie * sprawnosc * wspolczynnik);
+                    //alert(prad +" " + mianownik);
+                    var prad_pop = prad.toFixed(2);
+                    if (moc_znamionowa > 3680) {
+                        alert("Prąd powyżej 16A, potrzebne zasilanie 3-fazowe");
+                    } else if (prad_pop > 9.5) {
+                        alert(prad_pop + "A. Zastosuj przewod 2,5mm i zab. 16A.");
+                    } else if (prad_pop < 9.5) {
+                        alert(prad_pop + "A. Zastosuj przewod 1,5mm i zab 10A.");
+                    }
+
+                    return false;
+                }
+            </script>
+            Prąd znamionowy silnika 3 fazowego
+            <form id="sil_3faz" action="">
+                <div>
+                    Podaj moc znamionową (W): <input type="number" name="moc_znamionowa"><br />
+                    Podaj napięcie międzyprzewodowe (V): <input type="number" name="napiecie3f" value="400"><br />
+                    Podaj sprawność znamionową silnika: <input type="number" name="sprawnosc" placeholder="0 - 1"><br />
+                    Podaj współczynnik mocy znamionowej: <input type="number" name="wspolczynnik" placeholder="0.75 - 0.9"><br />
+                    <button onclick=" return sil_3faz()" style="background-color:orange">Oblicz</button>
+                </div>
+            </form>
+            <script>
+                // Przekroj dla odbiornika 1 fazowego
+                function sil_3faz() {
+                    //przypisanie obiektu moc_znamionowa do zmiennej
+                    var =pole_moc = document.forms['sil_3faz'].moc_znamionowa;
+                    //odczytanie mocy
+                    var moc_znamionowa = pole_moc.value;
+
+                    //przypisanie obiektu napiecie do zmiennej
+                    var pole_napiecie = document.forms['sil_3faz'].napiecie3f;
+                    //odczytanie napiecia
+                    var napiecie3f = pole_napiecie.value;
+
+                    // przypisanie obiektu sprawnosc do zmiennej
+                    var pole_sprawnosc = document.forms['sil_3faz'].sprawnosc;
+                    //odczytanie sprawnosci
+                    var sprawnosc = pole_sprawnosc.value;
+
+                    // przypisanie obiektu wspolczynnik do zmiennej
+                    var pole_wspolczynnik = document.forms['sil_3faz'].wspolczynnik;
+                    // odczyt sprawnosci
+                    var wspolczynnik = pole_wspolczynnik.value;
+
+                    // obliczanie pradu obciazenia
+
+                    var prad;
+                    prad = moc_znamionowa / ((Math.sqrt(3) * napiecie3f) * sprawnosc * wspolczynnik);
+
+                    var prad_pop = prad.toFixed(2); // ograniczenie do 2 miejsc po przecinku
+                    if (prad_pop < 13) {
+                        alert(prad_pop + "A. Przewod 1,5mm i zab. 13A.");
+                    } else if (prad_pop < 16) {
+                        alert(prad_pop + "A. Przewod 2,5mm i zab. 16A.");
+                    } else if (prad_pop < 25) {
+                        alert(prad_pop + "A. Przewod 4mm i zab. 25A.");
+                    } else if (prad_pop < 32) {
+                        alert(prad_pop + "A. Przewod 6mm i zab. 32A.");
+                    } else if (prad_pop < 40) {
+                        alert(prad_pop + "A. Przewod 10mm i zab 40A.");
+                    } else if (prad_pop < 50) {
+                        alert(prad_pop + "A. Przewod 16mm i zab. 50A.");
+                    } else if (prad_pop < 63) {
+                        alert(prad_pop + "A. Przewod 25mm i zab. 63A.");
+                    } else if (prad_pop < 80) {
+                        alert(prad_pop + "A. Przewod 35mm i zab. 80A.");
+                    } else {
+                        alert("Wynik: " + prad_pop + "A. Mam wiedze tylko do 80 A.");
+                    }
+                    return false;
+                }
+            </script>
+        </div>
+
+
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1>@2017</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="pagefive">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#pageone" data-transition="slidefade" class="ui-btn ui-corner-all  ui-icon-home  ui-btn-icon-left">Home</a>
+            <h1>TRANSAKCJE</h1>
+        </div>
+
+
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#">ID:1 Data:2017-06-28 ID KLIENTA:2 KWOTA:1500 Ilość sztuk:1 Sposob dostawy:Kurier  </a></li>
+            <li><a href="#">ID:2 Data:2017-06-07 ID KLIENTA:1 KWOTA:2000 Ilość sztuk:1 Sposob dostawy:Transport własny  </a></li>
+            <li><a href="#">ID:3 Data:2017-06-13 ID KLIENTA:4 KWOTA:1750 Ilość sztuk:2 Sposob dostawy:Kurier  </a></li>
+            <li><a href="#">ID:4 Data:2017-06-26 ID KLIENTA:5 KWOTA:900  Ilość sztuk:2 Sposob dostawy:Transport własny  </a></li>
+            <li><a href="#">ID:5 Data:2017-06-27 ID KLIENTA:3 KWOTA:1700 Ilość sztuk:2 Sposob dostawy:Kurier  </a></li>
+        </ul>
+    
+
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h1>@2017</h1>
+    </div>
+    </div>
+
+
+    <div data-role="page" id="pagesix">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#pageone" data-transition="slidefade" class="ui-btn ui-corner-all  ui-icon-home ui-btn-icon-left">Home</a>
+            <h1>KLIENCI</h1>
+        </div>
+
+
+
+    <ul data-role="listview" data-inset="true">
+        <li><a href="#">ID:1  Imie:Tomasz Nazwisko:Klek       Miasto:Krakow Ulica:Zielona        3 Telefon:697654321 </a></li>
+        <li><a href="#">ID:2  Imie:Łukasz Nazwisko:Statopilny Miasto:Krakow Ulica:Bohaterów     10 Telefon:659865412 </a></li>
+        <li><a href="#">ID:3  Imie:Piotr Nazwisko:Kaczmarek   Miasto:lublin Ulica:Wygodna       35 Telefon:998115236 </a></li>
+        <li><a href="#">ID:4  Imie:Tadeuusz Nazwisko:Adamczyk Miasto:Łódź   Ulica:Bonachiewicza 85 Telefon:986547412 </a></li>
+        <li><a href="#">ID:5  Imie:Tomasz Nazwisko:Klek       Miasto:Opole  Ulica:Wańkowicza    35 Telefon:785654125  </a></li>
+    </ul>
+
+
+      
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1>@2017</h1>
+        </div>
+    </div>
+
+</body>
+
 </html>
