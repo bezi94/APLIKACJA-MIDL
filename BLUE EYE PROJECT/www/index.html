@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+Ôªø<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -17,7 +17,7 @@
 
     <div data-role="page" data-position="fixed" id="pageone">
         <div data-role="header" style="font-weight:500" data-theme="b">
-            <a href="#" class="ui-btn ui-corner-all  ui-icon-home ui-btn-icon-left">HOME</a>
+            <a href="#" class="ui-btn ui-corner-all  ui-icon-home ui-btn-icon-left">G≈Å√ìWNA</a>
             <h1>BLUE EYE PROJECT</h1>
         </div>
 
@@ -51,20 +51,20 @@
 
             <div data-role="popup" id="myPopup" data-theme="b" class="ui-content">
                 <div style="font-size:15px;"><h3>Instrukcja aplikacji</h3></div>
-                <p>Aplikacja bÍdzie uøywana do obs≥ugi mobilnej naszej firmy. <span style="font-size:25px;"></span>Menu glÛwne sk≥ada siÍ z czterech przyciskÛw:<strong>Baza danych</strong>-jest to odnosnik do bazy danych utworzonej na serwerze internetowym.
-                    <strong>Kalkulator</strong> Specjalny kalkulator dla naszej firmy, ktÛry pozwoli oblicz napiÍcia etc.
-                <strong>Transkacje oraz Klienci</strong>Dane na temat ukoÒczonych transakcji oraz o naszych klientach.
+                <p>Aplikacja bƒôdzie u≈ºywana do obs≈Çugi mobilnej naszej firmy. <span style="font-size:25px;"></span>Menu gl√≥wne sk≈Çada siƒô z czterech przycisk√≥w:<strong>Baza danych</strong>-jest to odnosnik do bazy danych utworzonej na serwerze internetowym.
+                    <strong>Kalkulator</strong> Specjalny kalkulator dla naszej firmy, kt√≥ry pozwoli oblicz napiƒôcia etc.
+                <strong>Transkacje oraz Klienci</strong>Dane na temat uko≈Ñczonych transakcji oraz o naszych klientach.
                 <strong>Wersja aplikacji:1.0</strong></p>
 
                 <div data-role="footer" data-theme="b">
-                    <h1>@2017 V 1.0 </h1>
+                    <h1>@2017 </h1>
                 </div>
 
             </div>
         </div>
 
         <div data-role="footer" data-position="fixed" data-theme="b">
-            <h1>@2017 V 1.0</h1>
+            <h1>@2017</h1>
         </div>
     </div>
 
@@ -99,8 +99,8 @@
             <form id="odb_1faz" action="">
 
                 <div>
-                    Podaj moc znamionowπ (W): <input type="number" name="moc_znamionowa"><br />
-                    Podaj napiÍcie znamionowe (V): <input type="number" name="napiecie" value="230"><br />
+                    Podaj moc znamionowƒÖ (W): <input type="number" name="moc_znamionowa"><br />
+                    Podaj napiƒôcie znamionowe (V): <input type="number" name="napiecie" value="230"><br />
                     <button onclick=" return odb_1faz()" style="background-color:orange">Oblicz</button>
 
 
@@ -124,7 +124,7 @@
                     //alert(prad);
                     var prad_pop = prad.toFixed(2);
                     if (moc_znamionowa > 3680) {
-                        alert("Prπd powyøej 16A, potrzebne zasilanie 3-fazowe");
+                        alert("PrƒÖd powy≈ºej 16A, potrzebne zasilanie 3-fazowe");
                     } else if (prad_pop > 9.5) {
                         alert(prad_pop + "A. Zastosuj przewod 2,5mm i zab. 16A.");
                     } else if (prad_pop < 9.5) {
@@ -133,11 +133,11 @@
                     return false;
                 }
             </script>
-            Prπd znamionowy odbiornika rezystancyjnego 3 fazowego
+            PrƒÖd znamionowy odbiornika rezystancyjnego 3 fazowego
             <form id="odb_3faz" action="">
                 <div>
-                    Podaj moc znamionowπ (W): <input type="number" name="moc_znamionowa"><br />
-                    Podaj napiÍcie miÍdzyprzewodowe (V): <input type="number" name="napiecie3f" value="400"><br />
+                    Podaj moc znamionowƒÖ (W): <input type="number" name="moc_znamionowa"><br />
+                    Podaj napiƒôcie miƒôdzyprzewodowe (V): <input type="number" name="napiecie3f" value="400"><br />
                     <button onclick=" return odb_3faz()" style="background-color:orange">Oblicz</button>
                 </div>
             </form>
@@ -179,13 +179,13 @@
                     return false;
                 }
             </script>
-             Prπd znamionowy silnika 1 fazowego
+             PrƒÖd znamionowy silnika 1 fazowego
             <form id="sil_1faz" action="">
                 <div>
-                    Podaj moc znamionowπ (W): <input type="number" name="moc_znamionowa"><br />
-                    Podaj napiÍcie znamionowe (V): <input type="number" name="napiecie" value="230"><br />
-                    Podaj sprawnoúÊ znamionowπ silnika: <input type="number" name="sprawnosc" placeholder="0 - 1"> <br />
-                    Podaj wspÛ≥czynnik mocy znamionowej: <input type="number" name="wspolczynnik" placeholder="0.75 - 0.9"><br />
+                    Podaj moc znamionowƒÖ (W): <input type="number" name="moc_znamionowa"><br />
+                    Podaj napiƒôcie znamionowe (V): <input type="number" name="napiecie" value="230"><br />
+                    Podaj sprawno≈õƒá znamionowƒÖ silnika: <input type="number" name="sprawnosc" placeholder="0 - 1"> <br />
+                    Podaj wsp√≥≈Çczynnik mocy znamionowej: <input type="number" name="wspolczynnik" placeholder="0.75 - 0.9"><br />
                     <button onclick=" return sil_1faz()" style="background-color:orange">Oblicz</button>
                 </div>
             </form>
@@ -219,7 +219,7 @@
                     //alert(prad +" " + mianownik);
                     var prad_pop = prad.toFixed(2);
                     if (moc_znamionowa > 3680) {
-                        alert("Prπd powyøej 16A, potrzebne zasilanie 3-fazowe");
+                        alert("PrƒÖd powy≈ºej 16A, potrzebne zasilanie 3-fazowe");
                     } else if (prad_pop > 9.5) {
                         alert(prad_pop + "A. Zastosuj przewod 2,5mm i zab. 16A.");
                     } else if (prad_pop < 9.5) {
@@ -229,13 +229,13 @@
                     return false;
                 }
             </script>
-            Prπd znamionowy silnika 3 fazowego
+            PrƒÖd znamionowy silnika 3 fazowego
             <form id="sil_3faz" action="">
                 <div>
-                    Podaj moc znamionowπ (W): <input type="number" name="moc_znamionowa"><br />
-                    Podaj napiÍcie miÍdzyprzewodowe (V): <input type="number" name="napiecie3f" value="400"><br />
-                    Podaj sprawnoúÊ znamionowπ silnika: <input type="number" name="sprawnosc" placeholder="0 - 1"><br />
-                    Podaj wspÛ≥czynnik mocy znamionowej: <input type="number" name="wspolczynnik" placeholder="0.75 - 0.9"><br />
+                    Podaj moc znamionowƒÖ (W): <input type="number" name="moc_znamionowa"><br />
+                    Podaj napiƒôcie miƒôdzyprzewodowe (V): <input type="number" name="napiecie3f" value="400"><br />
+                    Podaj sprawno≈õƒá znamionowƒÖ silnika: <input type="number" name="sprawnosc" placeholder="0 - 1"><br />
+                    Podaj wsp√≥≈Çczynnik mocy znamionowej: <input type="number" name="wspolczynnik" placeholder="0.75 - 0.9"><br />
                     <button onclick=" return sil_3faz()" style="background-color:orange">Oblicz</button>
                 </div>
             </form>
@@ -307,11 +307,11 @@
 
 
         <ul data-role="listview" data-inset="true">
-            <li><a href="#">ID:1 Data:2017-06-28 ID KLIENTA:2 KWOTA:1500 IloúÊ sztuk:1 Sposob dostawy:Kurier  </a></li>
-            <li><a href="#">ID:2 Data:2017-06-07 ID KLIENTA:1 KWOTA:2000 IloúÊ sztuk:1 Sposob dostawy:Transport w≥asny  </a></li>
-            <li><a href="#">ID:3 Data:2017-06-13 ID KLIENTA:4 KWOTA:1750 IloúÊ sztuk:2 Sposob dostawy:Kurier  </a></li>
-            <li><a href="#">ID:4 Data:2017-06-26 ID KLIENTA:5 KWOTA:900  IloúÊ sztuk:2 Sposob dostawy:Transport w≥asny  </a></li>
-            <li><a href="#">ID:5 Data:2017-06-27 ID KLIENTA:3 KWOTA:1700 IloúÊ sztuk:2 Sposob dostawy:Kurier  </a></li>
+            <li><a href="#">ID:1 Data:2017-06-28 ID KLIENTA:2 KWOTA:1500 Ilo≈õƒá sztuk:1 Sposob dostawy:Kurier  </a></li>
+            <li><a href="#">ID:2 Data:2017-06-07 ID KLIENTA:1 KWOTA:2000 Ilo≈õƒá sztuk:1 Sposob dostawy:Transport w≈Çasny  </a></li>
+            <li><a href="#">ID:3 Data:2017-06-13 ID KLIENTA:4 KWOTA:1750 Ilo≈õƒá sztuk:2 Sposob dostawy:Kurier  </a></li>
+            <li><a href="#">ID:4 Data:2017-06-26 ID KLIENTA:5 KWOTA:900  Ilo≈õƒá sztuk:2 Sposob dostawy:Transport w≈Çasny  </a></li>
+            <li><a href="#">ID:5 Data:2017-06-27 ID KLIENTA:3 KWOTA:1700 Ilo≈õƒá sztuk:2 Sposob dostawy:Kurier  </a></li>
         </ul>
     
 
@@ -332,10 +332,10 @@
 
     <ul data-role="listview" data-inset="true">
         <li><a href="#">ID:1  Imie:Tomasz Nazwisko:Klek       Miasto:Krakow Ulica:Zielona        3 Telefon:697654321 </a></li>
-        <li><a href="#">ID:2  Imie:£ukasz Nazwisko:Statopilny Miasto:Krakow Ulica:BohaterÛw     10 Telefon:659865412 </a></li>
+        <li><a href="#">ID:2  Imie:≈Åukasz Nazwisko:Statopilny Miasto:Krakow Ulica:Bohater√≥w     10 Telefon:659865412 </a></li>
         <li><a href="#">ID:3  Imie:Piotr Nazwisko:Kaczmarek   Miasto:lublin Ulica:Wygodna       35 Telefon:998115236 </a></li>
-        <li><a href="#">ID:4  Imie:Tadeuusz Nazwisko:Adamczyk Miasto:£Ûdü   Ulica:Bonachiewicza 85 Telefon:986547412 </a></li>
-        <li><a href="#">ID:5  Imie:Tomasz Nazwisko:Klek       Miasto:Opole  Ulica:WaÒkowicza    35 Telefon:785654125  </a></li>
+        <li><a href="#">ID:4  Imie:Tadeuusz Nazwisko:Adamczyk Miasto:≈Å√≥d≈∫   Ulica:Bonachiewicza 85 Telefon:986547412 </a></li>
+        <li><a href="#">ID:5  Imie:Tomasz Nazwisko:Klek       Miasto:Opole  Ulica:Wa≈Ñkowicza    35 Telefon:785654125  </a></li>
     </ul>
 
 
